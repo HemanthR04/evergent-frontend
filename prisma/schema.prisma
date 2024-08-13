@@ -8,26 +8,29 @@ datasource db {
 }
 
 model UAT {
-  id                  Int       @id @default(autoincrement())
-  customer_id         String
-  acct_id             String
-  product             String
-  sales_method        String
-  Acct_Type_Desc      String
-  SKU                 String
-  Service_Stat        String
-  customer_category   String
-  credit_class        String
-  str_addr            String
-  city                String
-  state               String
-  zip_code            String
-  auto_payment_method String
-  email               String    
-  cell_phone          String
-  bre_start_dt        String
-  bre_end_dt          String?
-  lease_device        String
-  acct_status         String
-  cycle               String
+  id                  String       @id @db.VarChar(255) 
+  customer_id        String?      @db.VarChar(255)
+  acct_id            String      @db.VarChar(255) // Assuming acct_id is a unique identifier
+  product            String?      @db.VarChar(255)
+  sales_method       String?      @db.VarChar(255)
+  Acct_Type_Desc     String?      @db.VarChar(255) // Optional field
+  SKU                String?      @db.VarChar(255)
+  Service_Stat       String?      @db.VarChar(255)
+  customer_category  String?      @db.VarChar(255)
+  credit_class       String?      @db.VarChar(255)
+  str_addr           String?       @db.VarChar(255)
+  city               String?       @db.VarChar(255)
+  state              String?      @db.VarChar(255)
+  zip_code           String?       @db.VarChar(255)
+  auto_payment_method String?     @db.VarChar(255) // Optional field
+  email              String?      @db.VarChar(255)
+  cell_phone         String?       @db.VarChar(255)
+  bre_start_dt       String?       @db.VarChar(255)
+  bre_end_dt         String?       @db.VarChar(255)
+  lease_device       String?      @db.VarChar(255)
+  acct_status        String?       @db.VarChar(255)
+  cycle              String?      @db.VarChar(255)
 }
+
+
+
