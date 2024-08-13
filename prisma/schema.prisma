@@ -14,8 +14,6 @@ model UAT {
   product             String
   sales_method        String
   Acct_Type_Desc      String
-  acct_role_id        String
-  Acct_Role_Desc      String
   SKU                 String
   Service_Stat        String
   customer_category   String
