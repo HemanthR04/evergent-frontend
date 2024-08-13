@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE "UAT" ALTER COLUMN "bre_end_dt" SET DATA TYPE TEXT,
+ALTER COLUMN "bre_start_dt" SET DATA TYPE TEXT;
