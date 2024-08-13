@@ -220,11 +220,11 @@ export const salesMethod = [
 export const accountStaus = [
   {
     label: "Active",
-    value: "ACTIVE",
+    value: "Active",
   },
   {
     label: "Paused",
-    value: "PAUSED",
+    value: "Paused",
   },
 ];
 
